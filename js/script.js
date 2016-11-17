@@ -25,7 +25,7 @@ $(document).ready(function(){
 });
 function getDate(){
 	var date;
-	date=new date;
+	date = new date;
 	date = date.getUTCFullYear() +'-'+
 		('00' + (date.getUTCMonth() +1 )).slice(-2)+'-'+
 		('00' + date.getUTCDate().slice(-2)+' '+
