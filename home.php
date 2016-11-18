@@ -1,4 +1,10 @@
 <?php 	
+  /** 
+ *@auther 
+ *@huntereyes93@gmail.com 
+ *2016-11-18 16:56:47 
+  **/
+
 	// Database connection 
 	include_once 'database.php'; 
 	//select query
