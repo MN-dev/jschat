@@ -15,7 +15,7 @@ $(document).ready(function(){
 				data: dataString,
 				cache: false,
 				success: function(html){
-				$('#shout ul').prepend(html);
+				$('#shouts ul').prepend(html);
 				}
 			});
 		}
@@ -23,14 +23,15 @@ $(document).ready(function(){
 		return false ;
 	});
 });
-function getDate(){
-	var date;
-	date = new date;
-	date = date.getUTCFullYear() +'-'+
-		('00' + (date.getUTCMonth() +1 )).slice(-2)+'-'+
-		('00' + date.getUTCDate().slice(-2)+' '+
-		('00' + date.getUTCHours().slice(-2)+ ':'+
-		('00' + date.getUTCMinutes().slice(-2)+':'+
-		('00' + date.getUTCSeconds().slice(-2);
-	return date;
+function getDate() {
+    var date = new Date;
+    date = date.getUTCFullYear() + '-' +
+        ('00' + (date.getUTCMonth() + 1)).slice(-2) + '-' +
+        ('00' + date.getUTCDate()).slice(-2) + ' ' +
+        ('00' + date.getUTCHours()).slice(-2) + ':' +
+        ('00' + date.getUTCMinutes()).slice(-2) + ':' +
+        ('00' + date.getUTCSeconds()).slice(-2);
+    return date;
 }
+
+ $("html,body").animate({scrollTop:$("#shouts")[0].offsetTop}, 1000);
